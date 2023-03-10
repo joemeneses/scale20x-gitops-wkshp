@@ -18,4 +18,4 @@ jobs:
 
       - uses: ko-build/setup-ko@main
       
-      - run: cd apps/team-1/server && ko build --preserve-import-paths --tags "\${GITHUB_REF_NAME}-\${GITHUB_SHA:0:7}-\$(date +%s),latest"
+      - run: cd apps/team-1/server && ko build --preserve-import-paths --tags "\${GITHUB_REF_NAME}-\${GITHUB_SHA:0:7}-\$(date +%s)\,latest"
